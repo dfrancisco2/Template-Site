@@ -1,12 +1,13 @@
 /* Global */
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
 }
 
-body {
-    text-align: center;
+body,
+html {
+    height: 100%;
 }
 
 main {
@@ -18,49 +19,84 @@ main {
 }
 
 img {
-    width: 100%;
-    height: 15vw;
+    display: block;
+    /* overflow: hidden; */
+    object-fit: contain;
 }
 
-.container {
-    /* margin: 40px auto; */
-    width: 100%;
+form {
+    text-align: left;
 }
 
-.white-section {
-    background-color: #f2f2f2;
+.card-body {
+    padding: 50px;
 }
 
 .transparent-section {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.95);
-    opacity: 0.75;
     padding: 75px;
+    background-color: rgba(0, 0, 0, 0.70);
+    opacity: 0.85;
+}
+
+#footer-section input,
+.white-section {
+    background-color: #f2f2f2;
+}
+
+img,
+#hero-section,
+#background-video,
+.content,
+.container {
+    width: 100%;
+}
+
+#footer-section,
+.container {
+    padding: 100px 0;
+    text-align: center;
 }
 
 
 /* Hero-Section */
 
-#hero-section {
-    width: 100%;
+#background-video {
+    object-fit: cover;
+    height: 99.5vh;
+    z-index: 0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
-#background-video {
-    height: 100vh;
+.content {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* Section 2 */
 
-#section2 .right {
+.section2-content {
+    border-left: 1px solid gray;
     border-right: 1px solid gray;
-    margin: 30px;
+    margin: 0 50px;
+    padding: 0 80px;
 }
 
 
 /* Section 3 */
 
-#section3 .card {
-    margin: 50px;
-    padding: 0;
+
+/* Footer Section */
+
+#footer-section .container {
+    background-color: #fff;
+    padding: 100px;
 }
