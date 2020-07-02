@@ -1,13 +1,13 @@
 /* Global */
 
 * {
-    /* box-sizing: border-box; */
-    margin: 0;
+    box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
+body {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -20,7 +20,6 @@ main {
 
 img {
     display: block;
-    /* overflow: hidden; */
     object-fit: contain;
 }
 
@@ -63,7 +62,7 @@ img,
 
 #background-video {
     object-fit: cover;
-    height: 99.5vh;
+    height: 100vh;
     z-index: 0;
     filter: blur(8px);
     -webkit-filter: blur(8px);
