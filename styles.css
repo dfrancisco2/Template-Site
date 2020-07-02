@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #333;
     overflow-x: hidden;
 }
 
@@ -38,6 +44,11 @@ form {
     opacity: 0.85;
 }
 
+h1,
+h2 {
+    padding-bottom: 20px;
+}
+
 #footer-section input,
 .white-section {
     background-color: #f2f2f2;
@@ -63,7 +74,7 @@ img,
 #background-video {
     object-fit: cover;
     height: 100vh;
-    z-index: 0;
+    width: 100%;
     filter: blur(8px);
     -webkit-filter: blur(8px);
 }
@@ -98,4 +109,11 @@ img,
 #footer-section .container {
     background-color: #fff;
     padding: 100px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
 }
